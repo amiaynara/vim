@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/tesla/learn/Udemy/complete_boot_camp/test'
+let g:netrw_dirhist_4='/home/tesla/Projects/One_landing/.git'
+let g:netrw_dirhist_3='/home/tesla/learn/backend/coursera/bootstrap4-starter/Bootstrap4/conFusion/CSS'
+let g:netrw_dirhist_2='/home/tesla/guides'
 let g:netrw_dirhist_1='/home/tesla/learn/front_end/code'
