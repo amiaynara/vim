@@ -1,4 +1,29 @@
 syntax on
+set laststatus=2    "" adds a status bar to the end of the file. 
+
+
+"" make space for Vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" let Vundle manage Vundle, required
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+call vundle#end()
+filetype plugin indent on    " required
+
+
+
+
+
+
+
 set number
 map <Down> <NOP>
 map <Up> <NOP>
