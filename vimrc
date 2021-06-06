@@ -18,8 +18,13 @@ Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 filetype plugin indent on    " required
 
-
-
+" for javascript babel
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+augroup javascript_folding
+    au!
+    au FileType javascript setlocal foldmethod=syntax
+augroup END
 
 
 
@@ -39,11 +44,12 @@ set relativenumber  "Helps to navigate with h,j,k,l much faster
 "set tabstop=4
 "after sourcing the vim file resets according to your config eg. tab goes from previous spacing to current spacing = 2.
 "set smartindent
-set expandtab      "" Changes tabs to spaces? how many as defined by the tabstop keyword       
+set expandtab!      "" Changes tabs to spaces? how many as defined by the tabstop keyword       
 set tabstop=4      "" Tabs are ^I, but due to 'et' they will be 4 white spaces.
 set softtabstop=4  "" while using backspace
 set shiftwidth=4   "" after hitting Enter, cursor 'shifts' 4 white SPACES
 set autoindent
+
         
 "autcmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
